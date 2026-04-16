@@ -9,9 +9,9 @@ print("Tu edad es:", edad)
 
 # LISTA (ARREGLO)
 
-numeros = [10, 20, 30, 40, 50]
+numeros = [5, 10, 15, 20]
 
-print("Números de la lista:")
+print("Números en la lista:")
 
 for n in numeros:
     print(n)
@@ -19,19 +19,19 @@ for n in numeros:
 
 # FUNCION
 
-def promedio(lista):
+def calcular_promedio(lista):
     suma = 0
 
     for numero in lista:
         suma = suma + numero
 
-    resultado = suma / len(lista)
+    promedio = suma / len(lista)
 
-    return resultado
+    return promedio
 
 
 # LLAMAR FUNCION
 
-resultado = promedio(numeros)
+resultado = calcular_promedio(numeros)
 
 print("El promedio es:", resultado)
